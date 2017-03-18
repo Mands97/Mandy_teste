@@ -1,0 +1,58 @@
+PII 16/03/17
+
+---------------------
+package automoveis;
+
+import java.util.Scanner;
+
+public class Automoveis {
+
+    public static void main(String[] args) {
+        Scanner leitor = new Scanner(System.in);
+        //Colocando atributos, e vai gera os resultados.
+        double quilometragem, combustivel, total;
+        // pedindo os valores para o usuario.
+        System.out.println("Qual vai ser a quantidade de combustivel? ");
+        combustivel = leitor.nextDouble();
+        System.out.println("Qual a distancia pecorrida? ");
+        quilometragem = leitor.nextDouble();
+
+        //processamento das entradas do usuarios.
+        total = quilometragem / combustivel;
+
+        // resposta de quanto ele andou.
+        System.out.println("o consumo de gasolina por litro é: " + total);
+
+    }
+
+}
+---------------------------------------------------------------------------------------
+
+package automoveis;
+
+import java.util.Scanner;
+
+public class catetos {
+
+    public static void main(String[] args) {
+        Scanner leitor = new Scanner(System.in);
+
+        //ENTRADA
+        double cateto1, cateto2, hipotenusa, perimetro;
+
+        System.out.println("Mostra o valor do Cateto 1 : ");
+        cateto1 = leitor.nextDouble();
+
+        System.out.println("Mostra o valor do cateto 2 :");
+        cateto2 = leitor.nextDouble();
+
+        //PROCESSAMENTO
+        hipotenusa = Math.sqrt(cateto1 * cateto1 + cateto2 * cateto2);
+        perimetro = cateto1 + cateto2 + hipotenusa;
+        //SAIDA
+        System.out.println("Mostra o resultado da hipotenusa: " + hipotenusa);
+        System.out.println("Mostra o valor do perimetro: " + perimetro);
+
+    }
+
+}

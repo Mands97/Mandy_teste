@@ -1,0 +1,59 @@
+Aula do dia 09-03-17
+ Jogo da Velha simples;
+------------------------
+package segundoprojeto;
+
+public class SegundoProjeto {
+
+    public static void main(String[] args) {
+        String centro;
+        
+        centro = "x";
+        
+        System.out.println("   |   |   ");
+        System.out.println("---+---+---");
+        //para jogar a variavel no centro do "jogo".
+        System.out.print("   | ");
+        //sem o ln no final do print para não pular linha.
+        System.out.print(centro);
+        System.out.println(" |");
+        System.out.println("---+---+---");
+        System.out.println("   |   |   ");
+
+-----------------------------------------------------------------
+Agora de modo simples
+
+
+package segundoprojeto;
+
+public class SegundoProjeto {
+
+    public static void main(String[] args) {
+        String centro = "x";
+        
+        System.out.println("   |   |   ");
+        System.out.println("---+---+---");
+        System.out.println("   | " + centro + " |   ");
+        System.out.println("---+---+---");
+        System.out.println("   |   |   ");
+    }
+    
+}
+----------------------------------------------------------------------
+Converte.
+
+
+package segundoprojeto;
+
+
+public class TerceiroProjeto {
+     public static void main(String[] args) {
+       double f = -32;
+       double c = 5/9 ;
+       
+       System.out.println(f + "ºF = " +c+ "°c");
+       
+       
+        
+      }
+   }
